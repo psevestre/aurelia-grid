@@ -1,15 +1,10 @@
-System.register([], function(exports_1) {
-    var GridRowAttributes;
-    return {
-        setters:[],
-        execute: function() {
-            /** Really, any attributes will be carried accros */
-            GridRowAttributes = (function () {
-                function GridRowAttributes() {
-                }
-                return GridRowAttributes;
-            })();
-            exports_1("GridRowAttributes", GridRowAttributes);
+define(["require", "exports"], function (require, exports) {
+    "use strict";
+    /** Really, any attributes will be carried accros */
+    var GridRowAttributes = (function () {
+        function GridRowAttributes() {
         }
-    }
+        return GridRowAttributes;
+    }());
+    exports.GridRowAttributes = GridRowAttributes;
 });
