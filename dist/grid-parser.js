@@ -21,7 +21,7 @@ define(["require", "exports", './grid-column', './grid-row', './grid-pager', 'au
             }
             var columnElements = Array.prototype.slice.call(rowElement.querySelectorAll("grid-col"));
             var cols = [];
-            var columnTemplate = '<div class="grid-column-header" click.trigger="$grid.source.sortChanged($column, $event)"><span class="grid-column-heading">${$column.heading}</span>' +
+            var columnTemplate = '<div class="grid-column-header" click.trigger="$grid.source.sortChanged($column, $event)"><span class="grid-column-heading">${$column.heading |t }</span>' +
                 '<span if.bind="$column.sorting === \'desc\'" class="${$grid.icons.sortingDesc}"></span>' +
                 '<span if.bind="$column.sorting === \'asc\'" class="${$grid.icons.sortingAsc}"></span></div>';
             // <grid-col can-sort="true" heading="header"> ..

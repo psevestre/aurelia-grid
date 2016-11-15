@@ -1,4 +1,4 @@
-import {ViewSlot, View} from 'aurelia-framework';
+import {ViewSlot, View,bindable } from 'aurelia-framework';
 
 /** All Attributes on <grid-col  */
 export class GridColumn{
