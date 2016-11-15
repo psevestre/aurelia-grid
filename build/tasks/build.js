@@ -7,14 +7,18 @@ var tsc = require('typescript');
 var paths = require('../paths');
 var plumber = require('gulp-plumber');
 
-var tsProject = typescript.createProject('./tsconfig.json', { typescript: tsc });
+var tsProject = typescript.createProject('./tsconfig.json', { 
+	typescript: tsc,
+	moduleResolution: 'node'
+ });
 
 gulp.task('build-system', function () {
 	return gulp.src(paths.dtsSrc.concat(paths.source))
 		.pipe(plumber())
     //.pipe(sourcemaps.init({loadMaps: true}))
 		.pipe(changed(paths.output, { extension: '.js' }))
-		.pipe(typescript(tsProject))
+		//.pipe(typescript(tsProject))
+		.pipe(tsProject())
     //.pipe(sourcemaps.write({includeContent: true}))
 		.pipe(gulp.dest(paths.output));
 });

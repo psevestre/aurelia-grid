@@ -4,6 +4,8 @@
 		"module": "amd",
 		"sourceMap": true,
 		"emitDecoratorMetadata": true,
-		"experimentalDecorators": true
+		"experimentalDecorators": true,
+		"moduleResolution": "node"
+
 	}
 }

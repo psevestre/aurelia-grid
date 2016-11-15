@@ -21,6 +21,7 @@
   "homepage": "https://github.com/corneliutusnea/aurelia-grid#readme",
   "devDependencies": {
     "aurelia-framework": "^1.0.7",
+    "aurelia-i18n": "^1.2.1",
     "aurelia-tools": "^0.2.4",
     "babel": "^6.5.2",
     "babel-eslint": "^7.0.0",
@@ -58,19 +59,20 @@
     "object.assign": "^4.0.4",
     "require-dir": "^0.3.0",
     "run-sequence": "^1.2.2",
-    "typescript": "^2.0.3",
+    "typescript": "^2.0.9",
     "vinyl-paths": "^2.1.0",
     "yargs": "^6.1.1"
   },
   "jspm": {
     "registry": "npm",
-    "jspmPackage": true,
     "main": "index",
     "format": "amd",
     "directories": {
       "dist": "dist/amd"
     },
-    "peerDependencies": {},
+    "dependencies": {
+      "aurelia-framework": "^1.0.7"
+    },
     "devDependencies": {
       "aurelia-polyfills": "^1.0.0-beta.1.1.0"
     }
