@@ -61,13 +61,13 @@
 			
 			<div class="form-inline" if.bind="true">
 				<div class="form-control-group">
-					<select class="form-control" value.bind="pageSize">
+					<select class="form-control input-sm" value.bind="pageSize">
 						<option value.bind="size" repeat.for="size of pager.pageSizes">${ size === '*' ? 'All' : size }</option>
 					</select>
 					<span>${ 'grid.items_per_page' | t }</span>
 				</div>
 			</div>
-			<span class="grid-summary" if.bind="pager.showPagingSummary">Showing ${pager.firstVisibleItem} - ${pager.lastVisibleItem} of ${source.count} items</span>
+			<span class="grid-summary" if.bind="pager.showPagingSummary">${'grid.summary' | t { 'first': pager.firstVisibleItem, 'last' : pager.firstVisibleItem, 'total' : source.count} }</span>
 		</div>
 		<div class="grid-footer-custom-container"></div>
 	</div>
