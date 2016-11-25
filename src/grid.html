@@ -1,7 +1,7 @@
 <template>
 	<require from="./aurelia-grid.css"></require>
 	<div class="aurelia-grid grid-container">
-		<table class="table table-hover table-striped table-responsive grid-header-table">
+		<table class="table table-hover table-bordered table-responsive grid-header-table">
 			<thead>
 				<tr class="grid-headings">
 				</tr>
@@ -10,7 +10,7 @@
 
 		<!-- Content table -->
 		<div class="grid-content-container">
-			<table class="table table-hover table-striped table-responsive selectable" show.bind="!noDataMessage || (noDataMessage && source.count > 0)">
+			<table class="table table-hover table-bordered table-responsive selectable" show.bind="!noDataMessage || (noDataMessage && source.count > 0)">
 				<tbody>
 					<tr click.delegate="$grid.selection.select($item, $event)">
 					</tr>
@@ -29,7 +29,7 @@
 		<!-- Footer div -->
 		<div class="grid-footer-container" if.bind="(!pager.autoHide || source.pageCount > 1) && !pager.template">
 			<div class="pager">
-				<ul class="pagination">
+				<ul class="pagination pagination-sm no-margin pull-right">
 					<li>
 						<a class="mar-right" href="" title="Refresh" click.delegate="refresh()"><span class.bind="icons.refresh"></span></a>
 					</li>
@@ -64,7 +64,7 @@
 					<select class="form-control" value.bind="pageSize">
 						<option value.bind="size" repeat.for="size of pager.pageSizes">${ size === '*' ? 'All' : size }</option>
 					</select>
-					<span> items per page</span>
+					<span>${ 'grid.items_per_page' | t }</span>
 				</div>
 			</div>
 			<span class="grid-summary" if.bind="pager.showPagingSummary">Showing ${pager.firstVisibleItem} - ${pager.lastVisibleItem} of ${source.count} items</span>
