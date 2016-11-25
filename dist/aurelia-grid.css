@@ -1,7 +1,5 @@
 .aurelia-grid {
   position: relative;
-  border: 1px solid gainsboro;
-  border-radius: 5px;
 }
 .aurelia-grid table.grid-header-table {
   margin-bottom: 0px;
@@ -21,10 +19,6 @@
 }
 .aurelia-grid table.grid-header-table th.grid-column-non-sortable {
   cursor: default;
-}
-.aurelia-grid table.grid-header-table tr th {
-  border-right: 1px solid gainsboro;
-  border-left: 1px solid gainsboro;
 }
 .aurelia-grid table.grid-header-table tr th:first-child {
   border-left: 0;
@@ -68,7 +62,6 @@
 }
 .aurelia-grid .grid-footer-container {
   height: 46px;
-  border-top: 1px solid gainsboro;
   padding: 8px;
 }
 .aurelia-grid .grid-footer-container > div {
