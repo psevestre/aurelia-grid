@@ -1,10 +1,9 @@
-define(["require", "exports", './grid'], function (require, exports, grid_1) {
+define(["require", "exports"], function (require, exports) {
     "use strict";
     function configure(aurelia, configCallback) {
         aurelia.globalResources('./grid');
-        var baseConfig = aurelia.container.get(grid_1.Grid);
         if (configCallback !== undefined && typeof (configCallback) === 'function') {
-            configCallback(baseConfig);
+            configCallback(aurelia);
         }
     }
     exports.configure = configure;
