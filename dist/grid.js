@@ -210,4 +210,13 @@ define(["require", "exports", 'aurelia-framework', 'aurelia-framework', './grid-
         var parser = new grid_parser_1.GridParser();
         return parser.parse(element);
     }
+    /**
+     * Dummy Class
+     */
+    var GridLoader = (function () {
+        function GridLoader() {
+        }
+        return GridLoader;
+    }());
+    exports.GridLoader = GridLoader;
 });

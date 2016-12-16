@@ -181,3 +181,13 @@ function processUserTemplate(element: any): GridTemplate{
 	var parser = new GridParser();
 	return parser.parse(element);	
 }
+
+
+/**
+ * Dummy Class
+ */
+export class GridLoader {
+	constructor() {
+
+	}
+}
