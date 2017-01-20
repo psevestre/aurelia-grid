@@ -14,6 +14,7 @@ gulp.task('serve', ['build'], function(done) {
       baseDir: paths.sample,
       routes: {
         '/src/aurelia-grid': paths.output,
+        '/jspm_packages' : './jspm_packages'
       },
     },
   }, done);

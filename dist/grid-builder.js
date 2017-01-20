@@ -1,4 +1,4 @@
-define(["require", "exports", 'aurelia-framework', 'aurelia-framework'], function (require, exports, aurelia_framework_1, aurelia_framework_2) {
+define(["require", "exports", "aurelia-framework", "aurelia-framework"], function (require, exports, aurelia_framework_1, aurelia_framework_2) {
     "use strict";
     var GridBuilder = (function () {
         function GridBuilder(grid, element) {

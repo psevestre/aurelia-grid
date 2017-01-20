@@ -10,6 +10,7 @@ System.config({
   map: {
     "aurelia-framework": "npm:aurelia-framework@1.0.7",
     "aurelia-polyfills": "npm:aurelia-polyfills@1.0.0",
+    "font-awesome": "npm:font-awesome@4.7.0",
     "npm:aurelia-binding@1.0.9": {
       "aurelia-logging": "npm:aurelia-logging@1.1.1",
       "aurelia-metadata": "npm:aurelia-metadata@1.0.2",
@@ -53,6 +54,9 @@ System.config({
       "aurelia-pal": "npm:aurelia-pal@1.0.0",
       "aurelia-path": "npm:aurelia-path@1.1.1",
       "aurelia-task-queue": "npm:aurelia-task-queue@1.1.0"
+    },
+    "npm:font-awesome@4.7.0": {
+      "css": "github:systemjs/plugin-css@0.1.32"
     }
   }
 });

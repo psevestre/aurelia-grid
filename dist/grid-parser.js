@@ -1,4 +1,4 @@
-define(["require", "exports", './grid-column', './grid-row', './grid-pager', 'aurelia-framework'], function (require, exports, grid_column_1, grid_row_1, grid_pager_1, aurelia_framework_1) {
+define(["require", "exports", "./grid-column", "./grid-row", "./grid-pager", "aurelia-framework"], function (require, exports, grid_column_1, grid_row_1, grid_pager_1, aurelia_framework_1) {
     "use strict";
     /** Helper to do the parsing of the grid content */
     var GridParser = (function () {

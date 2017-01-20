@@ -3,20 +3,21 @@ var __extends = (this && this.__extends) || function (d, b) {
     function __() { this.constructor = d; }
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
-define(["require", "exports", './grid-source'], function (require, exports, grid_source_1) {
+define(["require", "exports", "./grid-source"], function (require, exports, grid_source_1) {
     "use strict";
     /** Local Source of Grid Data - In Memory Paging and Sorting */
     var LocalGridData = (function (_super) {
         __extends(LocalGridData, _super);
         function LocalGridData(grid) {
-            _super.call(this, grid);
-            this.supportsPagination = true;
-            this.supportsSorting = true;
-            this.supportsMultiPageSorting = true;
-            this.dataRead = grid.sourceRead;
-            if (!this.dataRead) {
+            var _this = _super.call(this, grid) || this;
+            _this.supportsPagination = true;
+            _this.supportsSorting = true;
+            _this.supportsMultiPageSorting = true;
+            _this.dataRead = grid.sourceRead;
+            if (!_this.dataRead) {
                 throw new Error("'data-read.call' is not defined on the grid.");
             }
+            return _this;
         }
         LocalGridData.prototype.refresh = function () {
             var _this = this;

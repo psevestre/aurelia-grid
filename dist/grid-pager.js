@@ -7,7 +7,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-define(["require", "exports", 'aurelia-framework'], function (require, exports, aurelia_framework_1) {
+define(["require", "exports", "aurelia-framework"], function (require, exports, aurelia_framework_1) {
     "use strict";
     var GridPager = (function () {
         function GridPager() {
@@ -110,47 +110,47 @@ define(["require", "exports", 'aurelia-framework'], function (require, exports, 
                 return this.grid.source.pageCount;
             return page;
         };
-        __decorate([
-            aurelia_framework_1.bindable, 
-            __metadata('design:type', Number)
-        ], GridPager.prototype, "numPagesToShow", void 0);
-        __decorate([
-            aurelia_framework_1.bindable, 
-            __metadata('design:type', Boolean)
-        ], GridPager.prototype, "showFirstLast", void 0);
-        __decorate([
-            aurelia_framework_1.bindable, 
-            __metadata('design:type', Boolean)
-        ], GridPager.prototype, "showJump", void 0);
-        __decorate([
-            aurelia_framework_1.bindable, 
-            __metadata('design:type', Boolean)
-        ], GridPager.prototype, "showPagingSummary", void 0);
-        __decorate([
-            aurelia_framework_1.bindable, 
-            __metadata('design:type', Array)
-        ], GridPager.prototype, "pageSizes", void 0);
-        __decorate([
-            aurelia_framework_1.bindable, 
-            __metadata('design:type', Boolean)
-        ], GridPager.prototype, "nextDisabled", void 0);
-        __decorate([
-            aurelia_framework_1.bindable, 
-            __metadata('design:type', Boolean)
-        ], GridPager.prototype, "prevDisabled", void 0);
-        __decorate([
-            aurelia_framework_1.bindable, 
-            __metadata('design:type', Number)
-        ], GridPager.prototype, "firstVisibleItem", void 0);
-        __decorate([
-            aurelia_framework_1.bindable, 
-            __metadata('design:type', Number)
-        ], GridPager.prototype, "lastVisibleItem", void 0);
-        __decorate([
-            aurelia_framework_1.bindable, 
-            __metadata('design:type', Boolean)
-        ], GridPager.prototype, "autoHide", void 0);
         return GridPager;
     }());
+    __decorate([
+        aurelia_framework_1.bindable,
+        __metadata("design:type", Number)
+    ], GridPager.prototype, "numPagesToShow", void 0);
+    __decorate([
+        aurelia_framework_1.bindable,
+        __metadata("design:type", Boolean)
+    ], GridPager.prototype, "showFirstLast", void 0);
+    __decorate([
+        aurelia_framework_1.bindable,
+        __metadata("design:type", Boolean)
+    ], GridPager.prototype, "showJump", void 0);
+    __decorate([
+        aurelia_framework_1.bindable,
+        __metadata("design:type", Boolean)
+    ], GridPager.prototype, "showPagingSummary", void 0);
+    __decorate([
+        aurelia_framework_1.bindable,
+        __metadata("design:type", Array)
+    ], GridPager.prototype, "pageSizes", void 0);
+    __decorate([
+        aurelia_framework_1.bindable,
+        __metadata("design:type", Boolean)
+    ], GridPager.prototype, "nextDisabled", void 0);
+    __decorate([
+        aurelia_framework_1.bindable,
+        __metadata("design:type", Boolean)
+    ], GridPager.prototype, "prevDisabled", void 0);
+    __decorate([
+        aurelia_framework_1.bindable,
+        __metadata("design:type", Number)
+    ], GridPager.prototype, "firstVisibleItem", void 0);
+    __decorate([
+        aurelia_framework_1.bindable,
+        __metadata("design:type", Number)
+    ], GridPager.prototype, "lastVisibleItem", void 0);
+    __decorate([
+        aurelia_framework_1.bindable,
+        __metadata("design:type", Boolean)
+    ], GridPager.prototype, "autoHide", void 0);
     exports.GridPager = GridPager;
 });

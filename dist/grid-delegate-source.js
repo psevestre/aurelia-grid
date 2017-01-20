@@ -3,20 +3,21 @@ var __extends = (this && this.__extends) || function (d, b) {
     function __() { this.constructor = d; }
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
-define(["require", "exports", './grid-source'], function (require, exports, grid_source_1) {
+define(["require", "exports", "./grid-source"], function (require, exports, grid_source_1) {
     "use strict";
     /** Remote Source of Grid Data via a function */
     var DelegateGridData = (function (_super) {
         __extends(DelegateGridData, _super);
         function DelegateGridData(grid) {
-            _super.call(this, grid);
-            this.dataRead = grid.sourceRead;
-            if (!this.dataRead) {
+            var _this = _super.call(this, grid) || this;
+            _this.dataRead = grid.sourceRead;
+            if (!_this.dataRead) {
                 throw new Error("'data-read.call' is not defined on the grid.");
             }
-            this.supportsPagination = this.grid.sourceSupportsPagination;
-            this.supportsSorting = this.grid.sourceSupportsSorting;
-            this.supportsMultiColumnSorting = this.grid.sourceSupportsMultiColumnSorting;
+            _this.supportsPagination = _this.grid.sourceSupportsPagination;
+            _this.supportsSorting = _this.grid.sourceSupportsSorting;
+            _this.supportsMultiColumnSorting = _this.grid.sourceSupportsMultiColumnSorting;
+            return _this;
         }
         DelegateGridData.prototype.refresh = function () {
             var _this = this;

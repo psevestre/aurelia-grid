@@ -7,7 +7,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-define(["require", "exports", 'aurelia-framework', 'aurelia-framework', './grid-selection', './grid-builder', './grid-icons', './grid-parser', './grid-source', './grid-local-source', './grid-delegate-source'], function (require, exports, aurelia_framework_1, aurelia_framework_2, grid_selection_1, grid_builder_1, grid_icons_1, grid_parser_1, D, grid_local_source_1, grid_delegate_source_1) {
+define(["require", "exports", "aurelia-framework", "aurelia-framework", "./grid-selection", "./grid-builder", "./grid-icons", "./grid-parser", "./grid-source", "./grid-local-source", "./grid-delegate-source"], function (require, exports, aurelia_framework_1, aurelia_framework_2, grid_selection_1, grid_builder_1, grid_icons_1, grid_parser_1, D, grid_local_source_1, grid_delegate_source_1) {
     "use strict";
     var Grid = (function () {
         function Grid(element, vc, vr, container, targetInstruction, bindingEngine) {
@@ -118,93 +118,92 @@ define(["require", "exports", 'aurelia-framework', 'aurelia-framework', './grid-
             enumerable: true,
             configurable: true
         });
-        __decorate([
-            aurelia_framework_1.bindable, 
-            __metadata('design:type', Boolean)
-        ], Grid.prototype, "columnsShowHeaders", void 0);
-        __decorate([
-            aurelia_framework_1.bindable, 
-            __metadata('design:type', Boolean)
-        ], Grid.prototype, "columnsCanSort", void 0);
-        __decorate([
-            aurelia_framework_1.bindable, 
-            __metadata('design:type', Boolean)
-        ], Grid.prototype, "columnsCanFilter", void 0);
-        __decorate([
-            aurelia_framework_1.bindable, 
-            __metadata('design:type', Number)
-        ], Grid.prototype, "gridHeight", void 0);
-        __decorate([
-            aurelia_framework_1.bindable, 
-            __metadata('design:type', grid_icons_1.GridIcons)
-        ], Grid.prototype, "icons", void 0);
-        __decorate([
-            aurelia_framework_1.bindable, 
-            __metadata('design:type', Object)
-        ], Grid.prototype, "selectedItem", void 0);
-        __decorate([
-            aurelia_framework_1.bindable, 
-            __metadata('design:type', Object)
-        ], Grid.prototype, "source", void 0);
-        __decorate([
-            aurelia_framework_1.bindable, 
-            __metadata('design:type', Boolean)
-        ], Grid.prototype, "sourceAutoLoad", void 0);
-        __decorate([
-            aurelia_framework_1.bindable, 
-            __metadata('design:type', String)
-        ], Grid.prototype, "sourceType", void 0);
-        __decorate([
-            // local, remote
-            aurelia_framework_1.bindable, 
-            __metadata('design:type', Function)
-        ], Grid.prototype, "sourceRead", void 0);
-        __decorate([
-            aurelia_framework_1.bindable, 
-            __metadata('design:type', Function)
-        ], Grid.prototype, "sourceTransform", void 0);
-        __decorate([
-            aurelia_framework_1.bindable, 
-            __metadata('design:type', Function)
-        ], Grid.prototype, "sourceReadError", void 0);
-        __decorate([
-            aurelia_framework_1.bindable, 
-            __metadata('design:type', String)
-        ], Grid.prototype, "sourceLoadingMessage", void 0);
-        __decorate([
-            aurelia_framework_1.bindable, 
-            __metadata('design:type', Boolean)
-        ], Grid.prototype, "sourceSupportsPagination", void 0);
-        __decorate([
-            aurelia_framework_1.bindable, 
-            __metadata('design:type', Boolean)
-        ], Grid.prototype, "sourceSupportsSorting", void 0);
-        __decorate([
-            aurelia_framework_1.bindable, 
-            __metadata('design:type', Boolean)
-        ], Grid.prototype, "sourceSupportsMultiColumnSorting", void 0);
-        __decorate([
-            aurelia_framework_1.bindable, 
-            __metadata('design:type', String)
-        ], Grid.prototype, "noDataMessage", void 0);
-        __decorate([
-            aurelia_framework_1.bindable, 
-            __metadata('design:type', Number)
-        ], Grid.prototype, "pageSize", void 0);
-        Grid = __decorate([
-            aurelia_framework_1.customElement('grid'),
-            aurelia_framework_1.processContent(function (viewCompiler, viewResources, element, instruction) {
-                var result = processUserTemplate(element);
-                instruction.columns = result.columns;
-                instruction.rowAttributes = result.rowAttributes;
-                instruction.pager = result.pager;
-                return true;
-            }),
-            aurelia_framework_1.inject(Element, aurelia_framework_2.ViewCompiler, aurelia_framework_2.ViewResources, aurelia_framework_2.Container, aurelia_framework_1.TargetInstruction, aurelia_framework_1.BindingEngine), 
-            __metadata('design:paramtypes', [Element, aurelia_framework_2.ViewCompiler, aurelia_framework_2.ViewResources, aurelia_framework_2.Container, aurelia_framework_1.TargetInstruction, aurelia_framework_1.BindingEngine])
-        ], Grid);
         return Grid;
     }());
+    __decorate([
+        aurelia_framework_1.bindable,
+        __metadata("design:type", Boolean)
+    ], Grid.prototype, "columnsShowHeaders", void 0);
+    __decorate([
+        aurelia_framework_1.bindable,
+        __metadata("design:type", Boolean)
+    ], Grid.prototype, "columnsCanSort", void 0);
+    __decorate([
+        aurelia_framework_1.bindable,
+        __metadata("design:type", Boolean)
+    ], Grid.prototype, "columnsCanFilter", void 0);
+    __decorate([
+        aurelia_framework_1.bindable,
+        __metadata("design:type", Number)
+    ], Grid.prototype, "gridHeight", void 0);
+    __decorate([
+        aurelia_framework_1.bindable,
+        __metadata("design:type", grid_icons_1.GridIcons)
+    ], Grid.prototype, "icons", void 0);
+    __decorate([
+        aurelia_framework_1.bindable,
+        __metadata("design:type", Object)
+    ], Grid.prototype, "selectedItem", void 0);
+    __decorate([
+        aurelia_framework_1.bindable,
+        __metadata("design:type", Object)
+    ], Grid.prototype, "source", void 0);
+    __decorate([
+        aurelia_framework_1.bindable,
+        __metadata("design:type", Boolean)
+    ], Grid.prototype, "sourceAutoLoad", void 0);
+    __decorate([
+        aurelia_framework_1.bindable,
+        __metadata("design:type", String)
+    ], Grid.prototype, "sourceType", void 0);
+    __decorate([
+        aurelia_framework_1.bindable,
+        __metadata("design:type", Function)
+    ], Grid.prototype, "sourceRead", void 0);
+    __decorate([
+        aurelia_framework_1.bindable,
+        __metadata("design:type", Function)
+    ], Grid.prototype, "sourceTransform", void 0);
+    __decorate([
+        aurelia_framework_1.bindable,
+        __metadata("design:type", Function)
+    ], Grid.prototype, "sourceReadError", void 0);
+    __decorate([
+        aurelia_framework_1.bindable,
+        __metadata("design:type", String)
+    ], Grid.prototype, "sourceLoadingMessage", void 0);
+    __decorate([
+        aurelia_framework_1.bindable,
+        __metadata("design:type", Boolean)
+    ], Grid.prototype, "sourceSupportsPagination", void 0);
+    __decorate([
+        aurelia_framework_1.bindable,
+        __metadata("design:type", Boolean)
+    ], Grid.prototype, "sourceSupportsSorting", void 0);
+    __decorate([
+        aurelia_framework_1.bindable,
+        __metadata("design:type", Boolean)
+    ], Grid.prototype, "sourceSupportsMultiColumnSorting", void 0);
+    __decorate([
+        aurelia_framework_1.bindable,
+        __metadata("design:type", String)
+    ], Grid.prototype, "noDataMessage", void 0);
+    __decorate([
+        aurelia_framework_1.bindable,
+        __metadata("design:type", Number)
+    ], Grid.prototype, "pageSize", void 0);
+    Grid = __decorate([
+        aurelia_framework_1.customElement('grid'),
+        aurelia_framework_1.processContent(function (viewCompiler, viewResources, element, instruction) {
+            var result = processUserTemplate(element);
+            instruction.columns = result.columns;
+            instruction.rowAttributes = result.rowAttributes;
+            instruction.pager = result.pager;
+            return true;
+        }),
+        aurelia_framework_1.inject(Element, aurelia_framework_2.ViewCompiler, aurelia_framework_2.ViewResources, aurelia_framework_2.Container, aurelia_framework_1.TargetInstruction, aurelia_framework_1.BindingEngine),
+        __metadata("design:paramtypes", [Element, aurelia_framework_2.ViewCompiler, aurelia_framework_2.ViewResources, aurelia_framework_2.Container, aurelia_framework_1.TargetInstruction, aurelia_framework_1.BindingEngine])
+    ], Grid);
     exports.Grid = Grid;
     function processUserTemplate(element) {
         var parser = new grid_parser_1.GridParser();
