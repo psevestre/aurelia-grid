@@ -61,7 +61,7 @@
     "run-sequence": "^1.2.2",
     "typescript": "^2.1.5",
     "vinyl-paths": "^2.1.0",
-    "yargs": "^6.6.0"
+    "yargs": "^15.4.1"
   },
   "jspm": {
     "registry": "npm",
